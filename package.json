@@ -1,6 +1,6 @@
 {
   "name": "doge-node",
-  "version": "144.5.1",
+  "version": "144.5.2",
   "description": "simple command line doge tool. So doge, much art, wow",
   "dependencies": {
     "cli-color": "^1.0.0"
