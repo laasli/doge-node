@@ -3,6 +3,14 @@
 # doge-node
 simple command line doge tool. __Created just for fun.__
 
+### how to install?
+
+use the following command (you can use the '-g' switch to install globally):
+
+```
+npm install --save-dev doge-node
+```
+
 ### how to use?
 
 require it as you require your favourite dependencies for example:
