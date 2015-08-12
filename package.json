@@ -1,0 +1,27 @@
+{
+  "name": "doge-node",
+  "version": "144.5.1",
+  "description": "simple command line doge tool. So doge, much art, wow",
+  "dependencies": {
+    "cli-color": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laasli/doge-node"
+  },
+  "main":"dogenode.js",
+  "keywords": [
+    "doge",
+    "ascii",
+    "such",
+    "wow",
+    "art",
+    "so"
+  ],
+  "author": "laasli",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/laasli/doge-node/issues"
+  },
+  "homepage": "https://github.com/laasli/doge-node"
+}
