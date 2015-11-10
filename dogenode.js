@@ -1,8 +1,21 @@
 'use strict';
 var clc = require('cli-color');
+var _ = require('lodash');
 var Doge = function() {
 
-  this.suchDogeMuchAscii = function(){
+/* DISCLAIMER:
+  Default color is still yellowBright, 
+  please refer to: 
+  https://github.com/medikoo/cli-color#colors
+  for the available options.
+*/
+
+  this.suchDogeMuchAscii = function(suchConfig){
+    var suchConfig = _.assign({
+      color: 'yellowBright',
+      cls: true
+    }, suchConfig);
+
     var soString = "\
                       Y.                      _ \n\
                       YiL                   .```. \n\
@@ -28,11 +41,17 @@ var Doge = function() {
            :YYiii$$$$$$$YYYYYYY$$$$YY$$$$YYiiiiiYYYYYYi \n\
     ";
 
-    process.stdout.write(clc.erase.screen);
-    process.stdout.write(clc.yellowBright(soString));
+    if( suchConfig.cls )
+      process.stdout.write(clc.erase.screen);
+    process.stdout.write(clc[suchConfig.color](soString));
   };
 
-  this.iicsAhcuMegoDhcus = function () {
+  this.iicsAhcuMegoDhcus = function (gifnoChcus) {
+    var gifnoChcus = _.assign({
+      roloc: 'yellowBright',
+      slc: true
+    }, gifnoChcus);
+
 
     var gnirtSos = "\
               _                      .Y \n\
@@ -59,8 +78,11 @@ var Doge = function() {
      'iYYYYYYiiiiiYY$$$$YY$$$$YYYYYYY$$$$$$$iiiYY: \n\
     ";
 
-    process.stdout.write(clc.erase.screen);
-    process.stdout.write(clc.yellowBright(gnirtSos));
+    gifnoChcus = _.isUndefined(gifnoChcus) ? 'yellowBright' : gifnoChcus;
+
+    if( gifnoChcus.slc )
+      process.stdout.write(clc.erase.screen);
+    process.stdout.write(clc[gifnoChcus.roloc](gnirtSos));
   };
 };
 
