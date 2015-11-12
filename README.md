@@ -51,7 +51,7 @@ If you want to pass an object to **iicsAhcuMegoDhcus()**, the object looks like 
 }
 ```
 
-(Note that these are the default values of the object.)
+(Note that there are no default setted color, it is your terminal output color.)
 
 For the available color options please refer to: https://github.com/medikoo/cli-color#colors .
 
