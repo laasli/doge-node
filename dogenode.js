@@ -12,7 +12,6 @@ var Doge = function() {
 
   this.suchDogeMuchAscii = function(suchConfig){
     var suchConfig = _.assign({
-      color: 'yellowBright',
       cls: true
     }, suchConfig);
 
@@ -43,12 +42,15 @@ var Doge = function() {
 
     if( suchConfig.cls )
       process.stdout.write(clc.erase.screen);
-    process.stdout.write(clc[suchConfig.color](soString));
+
+    if( _.isUndefined(suchConfig.color))
+      process.stdout.write(soString);
+    else
+      process.stdout.write(clc[suchConfig.color](soString));
   };
 
   this.iicsAhcuMegoDhcus = function (gifnoChcus) {
     var gifnoChcus = _.assign({
-      roloc: 'yellowBright',
       slc: true
     }, gifnoChcus);
 
@@ -78,11 +80,13 @@ var Doge = function() {
      'iYYYYYYiiiiiYY$$$$YY$$$$YYYYYYY$$$$$$$iiiYY: \n\
     ";
 
-    gifnoChcus = _.isUndefined(gifnoChcus) ? 'yellowBright' : gifnoChcus;
-
     if( gifnoChcus.slc )
       process.stdout.write(clc.erase.screen);
-    process.stdout.write(clc[gifnoChcus.roloc](gnirtSos));
+
+    if(_.isUndefined(gifnoChcus.roloc))
+      process.stdout.write(gnirtSos);
+    else
+      process.stdout.write(clc[gifnoChcus.roloc](gnirtSos));
   };
 };
 
