@@ -4,7 +4,7 @@
   "description": "simple command line doge tool. So doge, much art, wow",
   "dependencies": {
     "cli-color": "^1.0.0",
-    "lodash": "3.10.1"
+    "lodash": "4.17.15"
   },
   "repository": {
     "type": "git",
